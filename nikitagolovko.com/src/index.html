@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nikita Golovko</title>
+  <meta name="description" content="Personal one-pager for Nikita Golovko. Find me on Instagram." />
+
+  <!-- Theme + color scheme -->
+  <meta name="color-scheme" content="light dark" />
+  <meta name="theme-color" content="#0a0a0a" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+
+  <!-- Open Graph / Twitter (kept minimal) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Your Name" />
+  <meta property="og:description" content="Personal one-pager for Nikita Golovko. Find me on Instagram." />
+  <meta property="og:url" content="https://nikitagolovko.com" />
+  <meta name="twitter:card" content="summary" />
+
+  <style>
+    :root {
+      --bg: #ffffff;       /* light */
+      --fg: #0a0a0a;
+      --muted: #666;
+      --link: #0366d6;
+      --ring: #8ab4f8;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0b0b0c;     /* dark */
+        --fg: #e6e6e6;
+        --muted: #9aa0a6;
+        --link: #8ab4f8;
+        --ring: #3b82f6;
+      }
+    }
+    * { box-sizing: border-box; }
+    html, body { height: 100%; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--fg);
+      font: 16px/1.5 system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+      display: grid;
+      place-items: center;
+    }
+    main {
+      padding: 4rem 2rem;
+      text-align: center;
+      width: min(42rem, 92vw);
+    }
+    h1 {
+      margin: 0 0 .5rem 0;
+      font-size: clamp(2rem, 6vw, 4rem);
+      letter-spacing: -0.02em;
+      line-height: 1.1;
+    }
+    p { margin: 0 0 1.5rem 0; color: var(--muted); }
+    .links { display: inline-flex; gap: .875rem; align-items: center; }
+    a {
+      color: var(--link);
+      text-decoration: none;
+      border-radius: .6rem;
+      padding: .625rem .9rem;
+      border: 1px solid color-mix(in srgb, var(--link) 35%, transparent);
+    }
+    a:hover { text-decoration: underline; }
+    a:focus-visible {
+      outline: 3px solid var(--ring);
+      outline-offset: 2px;
+    }
+    /* Print: keeps it classy */
+    @media print {
+      body { background: #fff; color: #000; }
+      a { color: #000; border: none; padding: 0; }
+    }
+    /* Motion‑sensitive users */
+    @media (prefers-reduced-motion: reduce) {
+      * { scroll-behavior: auto; }
+    }
+  </style>
+
+  <!-- Structured data for better SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Nikita Golovko",
+    "url": "https://nikitagolovko.com",
+    "sameAs": [
+      "https://instagram.com/notrealnikita"
+    ]
+  }
+  </script>
+</head>
+<body>
+  <main>
+    <h1>Nikita Golovko</h1>
+    <p>Software Engineer • Human</p>
+    <div class="links">
+      <a href="https://instagram.com/notrealnikita" rel="me noopener" target="_blank" aria-label="Instagram profile (opens in a new tab)">
+        Instagram
+      </a>
+    </div>
+  </main>
+</body>
+</html>
