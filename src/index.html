@@ -1,108 +1,296 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Nikita Golovko</title>
-  <meta name="description" content="Personal one-pager for Nikita Golovko. Find me on Instagram." />
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Nikita Golovko</title>
+    <meta
+      name="description"
+      content="Personal one-pager for Nikita Golovko. Find me on Instagram."
+    />
 
-  <!-- Theme + color scheme -->
-  <meta name="color-scheme" content="light dark" />
-  <meta name="theme-color" content="#0a0a0a" media="(prefers-color-scheme: dark)">
-  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+    <!-- Theme + color scheme -->
+    <meta name="color-scheme" content="light dark" />
+    <meta
+      name="theme-color"
+      content="#0a0a0a"
+      media="(prefers-color-scheme: dark)"
+    />
+    <meta
+      name="theme-color"
+      content="#ffffff"
+      media="(prefers-color-scheme: light)"
+    />
 
-  <!-- Open Graph / Twitter (kept minimal) -->
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="Your Name" />
-  <meta property="og:description" content="Personal one-pager for Nikita Golovko. Find me on Instagram." />
-  <meta property="og:url" content="https://nikitagolovko.com" />
-  <meta name="twitter:card" content="summary" />
+    <!-- Open Graph / Twitter (kept minimal) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Your Name" />
+    <meta
+      property="og:description"
+      content="Personal one-pager for Nikita Golovko. Find me on Instagram."
+    />
+    <meta property="og:url" content="https://nikitagolovko.com" />
+    <meta name="twitter:card" content="summary" />
 
-  <style>
-    :root {
-      --bg: #ffffff;       /* light */
-      --fg: #0a0a0a;
-      --muted: #666;
-      --link: #0366d6;
-      --ring: #8ab4f8;
-    }
-    @media (prefers-color-scheme: dark) {
+    <style>
       :root {
-        --bg: #0b0b0c;     /* dark */
-        --fg: #e6e6e6;
-        --muted: #9aa0a6;
-        --link: #8ab4f8;
-        --ring: #3b82f6;
+        --bg: #ffffff;
+        /* light */
+        --fg: #0a0a0a;
+        --muted: #666;
+        --link: #0366d6;
+        --ring: #8ab4f8;
       }
-    }
-    * { box-sizing: border-box; }
-    html, body { height: 100%; }
-    body {
-      margin: 0;
-      background: var(--bg);
-      color: var(--fg);
-      font: 16px/1.5 system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
-      display: grid;
-      place-items: center;
-    }
-    main {
-      padding: 4rem 2rem;
-      text-align: center;
-      width: min(42rem, 92vw);
-    }
-    h1 {
-      margin: 0 0 .5rem 0;
-      font-size: clamp(2rem, 6vw, 4rem);
-      letter-spacing: -0.02em;
-      line-height: 1.1;
-    }
-    p { margin: 0 0 1.5rem 0; color: var(--muted); }
-    .links { display: inline-flex; gap: .875rem; align-items: center; }
-    a {
-      color: var(--link);
-      text-decoration: none;
-      border-radius: .6rem;
-      padding: .625rem .9rem;
-      border: 1px solid color-mix(in srgb, var(--link) 35%, transparent);
-    }
-    a:hover { text-decoration: underline; }
-    a:focus-visible {
-      outline: 3px solid var(--ring);
-      outline-offset: 2px;
-    }
-    /* Print: keeps it classy */
-    @media print {
-      body { background: #fff; color: #000; }
-      a { color: #000; border: none; padding: 0; }
-    }
-    /* Motion‑sensitive users */
-    @media (prefers-reduced-motion: reduce) {
-      * { scroll-behavior: auto; }
-    }
-  </style>
 
-  <!-- Structured data for better SEO -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Nikita Golovko",
-    "url": "https://nikitagolovko.com",
-    "sameAs": [
-      "https://instagram.com/notrealnikita"
-    ]
-  }
-  </script>
-</head>
-<body>
-  <main>
-    <h1>Nikita Golovko</h1>
-    <p>Software Engineer • Human</p>
-    <div class="links">
-      <a href="https://instagram.com/notrealnikita" rel="me noopener" target="_blank" aria-label="Instagram profile (opens in a new tab)">
-        Instagram
-      </a>
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --bg: #0b0b0c;
+          /* dark */
+          --fg: #e6e6e6;
+          --muted: #9aa0a6;
+          --link: #8ab4f8;
+          --ring: #3b82f6;
+        }
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        height: 100%;
+      }
+
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--fg);
+        font: 16px/1.5 system-ui, -apple-system, Segoe UI, Roboto, Ubuntu,
+          Cantarell, Noto Sans, Helvetica, Arial, "Apple Color Emoji",
+          "Segoe UI Emoji";
+        display: grid;
+        place-items: center;
+      }
+
+      main {
+        padding: 4rem 2rem;
+        text-align: center;
+        width: min(42rem, 92vw);
+      }
+
+      h1 {
+        margin: 0 0 0.5rem 0;
+        font-size: clamp(2rem, 6vw, 4rem);
+        letter-spacing: -0.02em;
+        line-height: 1.1;
+      }
+
+      p {
+        margin: 0 0 1.5rem 0;
+        color: var(--muted);
+      }
+
+      .links {
+        display: inline-flex;
+        gap: 0.875rem;
+        align-items: center;
+      }
+
+      a {
+        color: var(--link);
+        text-decoration: none;
+        border-radius: 0.6rem;
+        padding: 0.625rem 0.9rem;
+        border: 1px solid color-mix(in srgb, var(--link) 35%, transparent);
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      a:focus-visible {
+        outline: 3px solid var(--ring);
+        outline-offset: 2px;
+      }
+
+      /* Language selector container at the top (flags) */
+      .lang-wrapper {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        font-size: 0.95rem;
+      }
+
+      .lang-label {
+        position: absolute;
+        left: -9999px;
+        top: auto;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+      }
+
+      .flag-btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+        background: transparent;
+        color: var(--fg);
+        border: 1px solid color-mix(in srgb, var(--fg) 8%, transparent);
+        padding: 0.3rem 0.45rem;
+        border-radius: 0.45rem;
+        cursor: pointer;
+        font: inherit;
+        font-size: 1.05rem;
+        line-height: 1;
+      }
+
+      .flag-btn[aria-pressed="true"] {
+        box-shadow: 0 0 0 3px color-mix(in srgb, var(--ring) 18%, transparent);
+      }
+
+      .flag-btn:focus-visible {
+        outline: 3px solid var(--ring);
+        outline-offset: 2px;
+      }
+
+      /* Print: keeps it classy */
+      @media print {
+        body {
+          background: #fff;
+          color: #000;
+        }
+
+        a {
+          color: #000;
+          border: none;
+          padding: 0;
+        }
+      }
+
+      /* Motion‑sensitive users */
+      @media (prefers-reduced-motion: reduce) {
+        * {
+          scroll-behavior: auto;
+        }
+      }
+    </style>
+
+    <!-- Structured data for better SEO -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Nikita Golovko",
+        "url": "https://nikitagolovko.com",
+        "sameAs": ["https://instagram.com/notrealnikita"]
+      }
+    </script>
+  </head>
+
+  <body>
+    <!-- Language selector (flag buttons) -->
+    <div class="lang-wrapper" aria-hidden="false">
+      <span class="lang-label" id="langLabel">Language</span>
+      <button
+        class="flag-btn"
+        id="lang-en"
+        aria-pressed="false"
+        aria-labelledby="langLabel"
+        title="English"
+      >
+        🇬🇧
+      </button>
+      <button
+        class="flag-btn"
+        id="lang-ru"
+        aria-pressed="false"
+        aria-labelledby="langLabel"
+        title="Русский"
+      >
+        🇷🇺
+      </button>
     </div>
-  </main>
-</body>
+    <main>
+      <h1 data-i18n="title">Nikita Golovko</h1>
+      <p data-i18n="subtitle">Software Engineer • Human</p>
+      <div class="links">
+        <a
+          id="insta-link"
+          href="https://instagram.com/notrealnikita"
+          rel="me noopener"
+          target="_blank"
+          aria-label="Instagram profile (opens in a new tab)"
+        >
+          Instagram
+        </a>
+      </div>
+    </main>
+    <script>
+      (function () {
+        const translations = {
+          en: {
+            title: "Nikita Golovko",
+            subtitle: "Software Engineer · Human",
+            instagram: "Instagram",
+            instagramAria: "Instagram profile (opens in a new tab)",
+          },
+          ru: {
+            title: "Никита Головко",
+            subtitle: "Инженер программного обеспечения · Человек",
+            instagram: "Инстаграм",
+            instagramAria: "Профиль в Instagram (откроется в новой вкладке)",
+          },
+        };
+
+        const btnEn = document.getElementById("lang-en");
+        const btnRu = document.getElementById("lang-ru");
+        const titleEl = document.querySelector('[data-i18n="title"]');
+        const subtitleEl = document.querySelector('[data-i18n="subtitle"]');
+        const instaLink = document.getElementById("insta-link");
+
+        function setPressed(btn, pressed) {
+          btn.setAttribute("aria-pressed", pressed ? "true" : "false");
+        }
+
+        function applyLang(lang) {
+          const t = translations[lang] || translations.en;
+          document.documentElement.lang = lang;
+          titleEl.textContent = t.title;
+          subtitleEl.textContent = t.subtitle;
+          instaLink.textContent = t.instagram;
+          instaLink.setAttribute("aria-label", t.instagramAria);
+          setPressed(btnEn, lang === "en");
+          setPressed(btnRu, lang === "ru");
+          try {
+            localStorage.setItem("site-lang", lang);
+          } catch (e) {
+            /* ignore */
+          }
+        }
+
+        const saved = (function () {
+          try {
+            return localStorage.getItem("site-lang");
+          } catch (e) {
+            return null;
+          }
+        })();
+        const defaultLang =
+          saved ||
+          (navigator.language && navigator.language.startsWith("ru")
+            ? "ru"
+            : "en");
+        applyLang(defaultLang);
+
+        btnEn.addEventListener("click", () => applyLang("en"));
+        btnRu.addEventListener("click", () => applyLang("ru"));
+      })();
+    </script>
+  </body>
 </html>
