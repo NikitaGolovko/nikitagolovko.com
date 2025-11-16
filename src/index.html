@@ -208,6 +208,15 @@
       </button>
       <button
         class="flag-btn"
+        id="lang-kz"
+        aria-pressed="false"
+        aria-labelledby="langLabel"
+        title="Қазақ"
+      >
+        🇰🇿
+      </button>
+      <button
+        class="flag-btn"
         id="lang-ru"
         aria-pressed="false"
         aria-labelledby="langLabel"
@@ -246,9 +255,16 @@
             instagram: "Инстаграм",
             instagramAria: "Профиль в Instagram (откроется в новой вкладке)",
           },
+          kz: {
+            title: "Никита Головко",
+            subtitle: "Бағдарламалық жасақтама инженері · Адам",
+            instagram: "Инстаграм",
+            instagramAria: "Instagram профилі (жаңа бетте ашылады)",
+          },
         };
 
         const btnEn = document.getElementById("lang-en");
+        const btnKz = document.getElementById("lang-kz");
         const btnRu = document.getElementById("lang-ru");
         const titleEl = document.querySelector('[data-i18n="title"]');
         const subtitleEl = document.querySelector('[data-i18n="subtitle"]');
@@ -266,6 +282,7 @@
           instaLink.textContent = t.instagram;
           instaLink.setAttribute("aria-label", t.instagramAria);
           setPressed(btnEn, lang === "en");
+          setPressed(btnKz, lang === "kz");
           setPressed(btnRu, lang === "ru");
           try {
             localStorage.setItem("site-lang", lang);
@@ -283,12 +300,13 @@
         })();
         const defaultLang =
           saved ||
-          (navigator.language && navigator.language.startsWith("ru")
-            ? "ru"
+          (navigator.language && navigator.language.startsWith("kz")
+            ? "kz"
             : "en");
         applyLang(defaultLang);
 
         btnEn.addEventListener("click", () => applyLang("en"));
+        btnKz.addEventListener("click", () => applyLang("kz"));
         btnRu.addEventListener("click", () => applyLang("ru"));
       })();
     </script>
